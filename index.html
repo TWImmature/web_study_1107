@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝藏寻找之旅</title>
+    <script src="treasure.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>开始你的宝藏寻找之旅</h1>
+<button id="startTreasureHunt">开始寻找宝藏</button>
+<div id="eventLog"></div>
+<div id="LibraryContent" class="text-content"></div>
+<div id="AncientScriptContent" class="text-content"></div>
+<div id="TempleContent" class="text-content"></div>
+<div id="GuardContent" class="text-content"></div>
+<div id="TreasureChestContent" class="text-content"></div>
+<div id="AncientMechanismContent" class="text-content"></div>
+<div id="SecretPassageContent" class="text-content"></div>
+<script>
+    document.getElementById('startTreasureHunt').addEventListener('click', function() {
+        findTreasureWithAsyncAwait();
+    });
+</script>
+</body>
+</html>
